@@ -39,7 +39,7 @@ dist/
 .python-version
 
 # project dirs
-datasets/
+
 /datasets/coco
 /datasets/lvis
 /datasets/pic
@@ -56,7 +56,10 @@ demo/performance.py
 demo/demo2.py
 train.sh
 benchmark.sh
-
+datasets/vintext
+datasets/vintext_origin
+datasets/ReCTS
+datasets/evaluation
 datasets/CTW1500
 datasets/mlt2017
 datasets/syntext1
@@ -64,7 +67,10 @@ datasets/syntext2
 datasets/totaltext
 datasets/evaluation
 datasets/icdar2015
-datasets/WikiText-103-n96.csv
+datasets/vietnamese.csv
+datasets/vietnamese.zip
+datasets/vietnamese_original.zip
+datasets/vn_cls_list.txt
 datasets/ArT
 datasets/ChnSyn
 datasets/LSVT
