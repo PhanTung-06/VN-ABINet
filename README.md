@@ -1,4 +1,4 @@
-# ABINet++: Autonomous, Bidirectional and Iterative Language Modeling for Scene Text Spotting
+# ABINet: Autonomous, Bidirectional and Iterative Language Modeling for Scene Text Recognition
 
 The official code of [ABINet++](https://arxiv.org/pdf/2211.10578.pdf).
 
