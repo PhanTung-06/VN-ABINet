@@ -118,7 +118,10 @@ class TextDataset(Dataset):
             text = text.lower()     
         # text = text.strip('\n')
         # print("text nè: ",text)
-        labels = [CTLABELS.index(char) for char in text]
+        try:
+            labels = [CTLABELS.index(char) for char in text]
+        except:
+            labels = [47,47,47]
         if padding:
             labels = labels + [len(CTLABELS)+1] * (length - len(text))
         return labels

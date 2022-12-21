@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.container .row .please {
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+.form-group {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:white;
+    text-align: center;
+    align-items: center;
+}
+
+.container .row .text-center {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    /* height: 300px; */
+    height:auto;
+    
+}
+
+.container .row .text-center img {
+    width: 100%;
+    height:auto;
+}
