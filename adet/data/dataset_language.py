@@ -99,7 +99,7 @@ class TextDataset(Dataset):
         dtype = {'inp': str, 'gt': str}
 
         timer = Timer()
-        self.df = pd.read_csv(self.path, dtype=dtype, delimiter=delimiter, na_filter=False)
+        self.df = pd.read_csv(self.path, dtype=dtype, delimiter='\t', na_filter=False, encoding="utf8")
         if self.is_training and self.use_sm: self.sm = SpellingMutation()
         self.inp_col, self.gt_col = 0, 1
         if timer.seconds() > 1:
@@ -115,13 +115,14 @@ class TextDataset(Dataset):
         # text = text.strip('\n')
         length = length if length else self.max_length
         if not case_sensitive:
-            text = text.lower()     
+            text = text.lower()
+        # if '̃' in text:
+        #     text = text.strip('̃')
         # text = text.strip('\n')
         # print("text nè: ",text)
-        try:
-            labels = [CTLABELS.index(char) for char in text]
-        except:
-            labels = [47,47,47]
+        # print(text)
+        labels = [CTLABELS.index(char) for char in text]
+
         if padding:
             labels = labels + [len(CTLABELS)+1] * (length - len(text))
         return labels

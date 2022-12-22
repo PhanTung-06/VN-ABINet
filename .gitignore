@@ -1,10 +1,10 @@
 # output dir
 output
-output_2
+output_aic
 instant_test_output
 inference_test_output
-
-
+uaic2022_public_valid
+*.zip
 # compilation and distribution
 __pycache__
 _ext
