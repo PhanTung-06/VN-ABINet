@@ -11,3 +11,7 @@ cd VN-ABINet
 python -m pip install ninja yacs cython matplotlib tqdm version_utils opencv-python shapely scipy tensorboardX pyclipper Polygon3 weighted-levenshtein editdistance 
 python setup.py build develop
 ```
+- Docker
+```sh
+docker-compose up --build
+```
