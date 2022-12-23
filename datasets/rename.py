@@ -1,8 +1,8 @@
 import os 
 import glob
 
-path = "/mmlabworkspace/WorkSpaces/danhnt/tuyensh/tungphan/ABINetpp/ABINet-PP/datasets/vintext_origin/unseen_test_images"
-labels = os.listdir("/mmlabworkspace/WorkSpaces/danhnt/tuyensh/tungphan/ABINetpp/ABINet-PP/datasets/vintext_origin/unseen_test_images")
+path = "/mmlabworkspace/WorkSpaces/danhnt/tuyensh/tungphan/AIC/VN-ABINet/datasets/uaic2022_training_data/images"
+labels = os.listdir("/mmlabworkspace/WorkSpaces/danhnt/tuyensh/tungphan/AIC/VN-ABINet/datasets/uaic2022_training_data/images")
 for file in labels:
     c = 0
     for i in file[2:]:

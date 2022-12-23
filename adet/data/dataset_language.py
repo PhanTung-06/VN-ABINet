@@ -116,10 +116,6 @@ class TextDataset(Dataset):
         length = length if length else self.max_length
         if not case_sensitive:
             text = text.lower()
-        # if '̃' in text:
-        #     text = text.strip('̃')
-        # text = text.strip('\n')
-        # print("text nè: ",text)
         # print(text)
         labels = [CTLABELS.index(char) for char in text]
 

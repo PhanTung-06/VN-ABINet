@@ -35,7 +35,11 @@ dist/
 .python-version
 
 # project dirs
-
+/datasets/annotations
+/datasets/becan_gen_labels
+/datasets/ctwtrain_text_image
+/datasets/newlabel
+/datasets/vis_results
 /datasets/coco
 /datasets/lvis
 /datasets/pic
